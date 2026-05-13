@@ -1,6 +1,2 @@
-# CYO 포트폴리오
----
-## Network_EventSelect
-- C++ 코딩스타일 확인용으로 작성되었습니다.
-## Dungeon_PartyPlay_Log
-- 
+# 포트폴리오 소개
+코딩스타일과 문제해결이라는 주제로 올려놓은 C++코드입니다.
