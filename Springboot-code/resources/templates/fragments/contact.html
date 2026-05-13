@@ -1,0 +1,55 @@
+﻿<th:block th:fragment="contact" xmlns:th="http://www.thymeleaf.org">
+  <div class="floating-actions" aria-label="빠른 이동">
+    <button type="button" class="floating-contact" aria-label="문의하기">
+      <img src="/images/photobooth/email-contact.png" alt="" aria-hidden="true">
+    </button>
+    <button type="button" class="floating-home" aria-label="첫화면으로 이동">
+      <img src="/images/photobooth/home-screen.png" alt="" aria-hidden="true">
+    </button>
+  </div>
+
+  <div id="contact-modal" class="contact-modal" aria-hidden="true">
+    <div class="contact-modal__backdrop" data-close-modal></div>
+    <div class="contact-modal__panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <button type="button" class="contact-modal__close" data-close-modal aria-label="닫기">×</button>
+      <h3 id="contact-modal-title" class="contact-modal__title">문의하기</h3>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="contact-company">회사명
+          <input id="contact-company" name="companyName" type="text" required>
+        </label>
+        <label for="contact-email">이메일
+          <input id="contact-email" name="email" type="email" required>
+        </label>
+        <label for="contact-phone">전화번호
+          <input id="contact-phone" name="phone" type="tel" required>
+        </label>
+        <label for="contact-subject">문의 주제
+          <select id="contact-subject" name="subject" required>
+            <option value="">선택해 주세요</option>
+            <option value="photo-booth">포토부스</option>
+            <option value="goods">굿즈</option>
+            <option value="partnership">제휴</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>분류 선택</legend>
+          <div class="contact-form__radio-group">
+            <label><input type="radio" name="contact-classification" value="individual">개인</label>
+            <label><input type="radio" name="contact-classification" value="company">회사</label>
+            <label><input type="radio" name="contact-classification" value="other">기타</label>
+          </div>
+        </fieldset>
+        <label for="contact-message">메시지 입력 (최대 200자)
+          <textarea id="contact-message" name="message" maxlength="200" required></textarea>
+          <div class="contact-form__message-meta"><span id="message-count">0</span>/200</div>
+        </label>
+        <label class="contact-form__check">
+          <input id="contact-terms" name="termsAgreement" type="checkbox" required>
+          약관에 동의합니다.
+        </label>
+        <p id="contact-status" class="contact-form__status" aria-live="polite"></p>
+        <button id="contact-submit" class="contact-form__submit" type="submit" disabled>전송</button>
+      </form>
+    </div>
+  </div>
+</th:block>

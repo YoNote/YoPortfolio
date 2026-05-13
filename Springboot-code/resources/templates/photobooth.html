@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브랜드페이지 | 포토그램</title>
+  <link rel="stylesheet" href="/common-styles.css">
+  <link rel="stylesheet" href="/photobooth.css">
+</head>
+<body>
+  <header th:replace="~{fragments/header :: header(activeMenu=${activeMenu})}"></header>
+
+  <main>
+    <section id="section-01" class="hero section hero-photobooth">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="/video/createdAI_photobooth.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="section-inner">
+        <p class="eyebrow">PHOTO-BOOTH</p>
+        <h1>White Label<br>AI Studio</h1>
+        <p>단순한 사진기가 아닙니다.압도적인 AI기술과 굿즈 제작 기능으로 <br>
+          고객의 발길을 멈추고 확실한 매출 성장을 경험하세요.</p>
+      </div>
+    </section>
+
+    <section id="section-02" class="section pb-intro-section">
+      <div class="section-inner">
+        <p class="eyebrow">PHOTO-GRAM</p>
+        <h2>포토부스</h2>
+        <p class="pb-intro-section__lead">설치가 유연하고 결과가 강한 포토부스 솔루션</p>
+
+        <div class="pb-intro-grid">
+          <article class="pb-intro-card pb-intro-card--flip">
+            <div class="pb-intro-card__front">
+              <div class="pb-intro-card__image">
+                <img src="/images/photobooth/section02_card01.png" width="216" height="337" alt="AI 촬영 포토부스 카드 이미지">
+              </div>
+              <div class="pb-intro-card__body">
+                <span class="pb-intro-card__icon" aria-hidden="true">
+                  <img src="/images/photobooth/section02_icon01.png" alt="">
+                </span>
+                <h3 class="pb-intro-card__title">부스 없이도 가능,<br>공간에 바로 세웁니다.</h3>
+                <p class="pb-intro-card__desc">별도 부스 제작 없이 장비 단독 설치 가능.<br>복합물, 전시장 등 빠르게 적용하세요.</p>
+              </div>
+            </div>
+
+            <div class="pb-intro-card__back" aria-label="AI 촬영 콘텐츠 상세 설명">
+              <ul class="pb-intro-card__back-list">
+                <li>배경, 스타일, 코스프레 테마 구성</li>
+                <li>프레임/UX 톤앤매너 동일</li>
+                <li>콘텐츠 업데이트로 시즌 운영 유리</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="pb-intro-card pb-intro-card--flip">
+            <div class="pb-intro-card__front">
+              <div class="pb-intro-card__image">
+                <img src="/images/photobooth/section02_card02.jpg" width="194" height="287" alt="항공뷰 모듈 포토부스 카드 이미지">
+              </div>
+              <div class="pb-intro-card__body">
+                <span class="pb-intro-card__icon" aria-hidden="true">
+                  <img src="/images/photobooth/section02_icon02.png" alt="">
+                </span>
+                <h3 class="pb-intro-card__title">항공뷰 모듈.<br>필요할 때만 더합니다.</h3>
+                <p class="pb-intro-card__desc">상단 항공뷰 촬영 모듈 탈부착 지원.<br>컨셉에 맞게 앵글을 전환하세요.</p>
+              </div>
+            </div>
+
+            <div class="pb-intro-card__back" aria-label="항공뷰 모듈 상세 설명">
+              <ul class="pb-intro-card__back-list">
+                <li>현장 컨셉에 따라 모듈 ON/OFF</li>
+                <li>위에서내려다 보는 항공샷 연출</li>
+                <li>설치 환경에 맞춘 유연한 구성</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="pb-intro-card pb-intro-card--flip">
+            <div class="pb-intro-card__front">
+              <div class="pb-intro-card__image">
+                <img src="/images/photobooth/section02_card03.png" width="219" height="340" alt="촬영 인화 포토부스 카드 이미지">
+              </div>
+              <div class="pb-intro-card__body">
+                <span class="pb-intro-card__icon" aria-hidden="true">
+                  <img src="/images/photobooth/section02_icon03.png" alt="">
+                </span>
+                <h3 class="pb-intro-card__title">촬영과 인화.<br>기본기가 결과를 만듭니다.</h3>
+                <p class="pb-intro-card__desc">고해상도 촬영과 안정적인 출력 품질.<br>AI 필터 후에도 디테일이 유지됩니다.</p>
+              </div>
+            </div>
+
+            <div class="pb-intro-card__back" aria-label="촬영 인화 상세 설명">
+              <ul class="pb-intro-card__back-list">
+                <li>디테일을 살리는 촬영 품질</li>
+                <li>선명도와 색감이 안정적인 인화</li>
+                <li>매끄러운 터치 기반 UI 흐름</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="pb-intro-card pb-intro-card--flip">
+            <div class="pb-intro-card__front">
+              <div class="pb-intro-card__image">
+                <img src="/images/photobooth/section02_card04.png" width="1080" height="1080" alt="브랜드 맞춤 AI 콘텐츠 카드 이미지">
+              </div>
+              <div class="pb-intro-card__body">
+                <span class="pb-intro-card__icon" aria-hidden="true">
+                  <img src="/images/photobooth/section02_icon04.png" alt="">
+                </span>
+                <h3 class="pb-intro-card__title">브랜드 맞춤 AI 콘텐츠.<br>결과물이 곧 홍보입니다.</h3>
+                <p class="pb-intro-card__desc">브랜드 아이덴티티에 맞춘 테마 구성.<br>매장만의 독창적 경험을 완성합니다.</p>
+              </div>
+            </div>
+
+            <div class="pb-intro-card__back" aria-label="브랜드 맞춤 AI 콘텐츠 상세 설명">
+              <ul class="pb-intro-card__back-list">
+                <li>배경, 스타일, 코스프레 테마 구성</li>
+                <li>프레임/UX 톤앤매너 동일</li>
+                <li>콘텐츠 업데이트로 시즌 운영 유리</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-03" class="section pb-service-section">
+      <div class="section-inner">
+        <p class="eyebrow">INSTALLATION SHOWCASE</p>
+        <h2>설치 사례</h2>
+        <p class="pb-service-section__lead">설치가 유연하고 결과가 강한 포토부스 솔루션</p>
+
+        <div class="pb-service-stack" data-service-stack>
+          <article class="pb-service-card pb-service-card--ai" data-service-card style="--card-index: 1;">
+            <div class="pb-service-card__copy">
+              <p class="eyebrow">복합몰 아트리움</p>
+              <h3 class="pb-service-card__title">더현대복합몰설치</h3>
+              <p class="pb-service-card__desc">개방형 공간에서시선유입이빠르고, 자연스러운 체험흐름이만들어집니다.<br>쇼핑몰유동인구를효과적으로 흡수합니다.</p>
+            </div>
+            <div class="pb-service-card__media">
+              <img src="/images/photobooth/section03_card01.png" width="216" height="337" alt="AI 콘텐츠 연출 이미지">
+            </div>
+          </article>
+
+          <article class="pb-service-card pb-service-card--experience" data-service-card style="--card-index: 2;">
+            <div class="pb-service-card__copy">
+              <p class="eyebrow">전시·박람회</p>
+              <h3 class="pb-service-card__title">MTE 박람회 부스운영</h3>
+              <p class="pb-service-card__desc">스탠션 큐구성으로대기열이정리되고, 단시간 대량체험에유리합니다.<br>부스홍보및관람객DB 확보에 최적입니다.</p>
+            </div>
+            <div class="pb-service-card__media">
+              <img src="/images/photobooth/section03_card02.png" width="194" height="287" alt="체험형 콘텐츠 연출 이미지">
+            </div>
+          </article>
+
+          <article class="pb-service-card pb-service-card--edu" data-service-card style="--card-index: 3;">
+            <div class="pb-service-card__copy">
+              <p class="eyebrow">게임 IP 프로모션</p>
+              <h3 class="pb-service-card__title">넥슨‘던전앤파이터’ 페스티벌</h3>
+              <p class="pb-service-card__desc">게임IP 기반 실시간AI 코스프레체험존운영.<br>팬덤에게특별한경험을제공하며SNS 바이럴을 유도했습니다.</p>
+            </div>
+            <div class="pb-service-card__media">
+              <img src="/images/photobooth/section03_card03.png" width="219" height="340" alt="에듀테인먼트 콘텐츠 이미지">
+            </div>
+          </article>
+
+          <article class="pb-service-card pb-service-card--it" data-service-card style="--card-index: 4;">
+            <div class="pb-service-card__copy">
+              <p class="eyebrow">캐릭터 팝업스토어</p>
+              <h3 class="pb-service-card__title">현대백화점‘흰디(Heendy)’</h3>
+              <p class="pb-service-card__desc">팝업 테마에맞춘프레임/필터커스텀구성. 캐릭터의 매력을 살린디자인으로 방문객의 소장욕구를 자극했습니다.</p>
+            </div>
+            <div class="pb-service-card__media">
+              <img src="/images/photobooth/section03_card04.png" width="194" height="287" alt="IT 개발 서비스 이미지">
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-04" class="section">
+      <div class="section-inner">
+        <p class="eyebrow">AI GALLERY</p>
+        <h2>더 다양하게, 더 자연스럽게</h2>
+        <p>샘플 이미지 카드를 슬라이드로 확인해 보세요.</p>
+        <div class="pb-slider pb-slider--showcase" data-slider>
+          <div class="pb-slider__viewport">
+            <div class="pb-slider__track" data-slider-track>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_bgcard_CHINA.png" alt="배경 카드 중국 테마 이미지">
+                <div class="pb-slider__bg-overlay">
+                  <h3>배경 합성</h3>
+                  <p>공간과 테마를 바꾸는 가장 빠른 방법</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_bgcard_JAPAN_.png" alt="배경 카드 일본 테마 이미지">
+                <div class="pb-slider__bg-overlay">
+                  <h3>배경 합성</h3>
+                  <p>공간과 테마를 바꾸는 가장 빠른 방법</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_bgcard_KOREA.png" alt="배경 카드 한국 테마 이미지">
+                <div class="pb-slider__bg-overlay">
+                  <h3>배경 합성</h3>
+                  <p>공간과 테마를 바꾸는 가장 빠른 방법</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_cosplay_AVATA.png" alt="코스프레 아바타 테마 이미지">
+                <div class="pb-slider__bg-overlay pb-slider__bg-overlay--top-right">
+                  <h3>코스프레 캐릭터</h3>
+                  <p>이벤트에서 가장 강한 체험 포인트</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_cosplay_IDOL.png" alt="코스프레 아이돌 테마 이미지">
+                <div class="pb-slider__bg-overlay pb-slider__bg-overlay--top-right">
+                  <h3>코스프레 캐릭터</h3>
+                  <p>이벤트에서 가장 강한 체험 포인트</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_cosplay_JOKER.png" alt="코스프레 조커 테마 이미지">
+                <div class="pb-slider__bg-overlay pb-slider__bg-overlay--top-right">
+                  <h3>코스프레 캐릭터</h3>
+                  <p>이벤트에서 가장 강한 체험 포인트</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_filter1.png" alt="필터 테마 이미지 1">
+                <div class="pb-slider__bg-overlay">
+                  <h3>스타일 필터</h3>
+                  <p>색감, 질감 무드까지 한번에</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_filter2.png" alt="필터 테마 이미지 2">
+                <div class="pb-slider__bg-overlay">
+                  <h3>스타일 필터</h3>
+                  <p>색감, 질감 무드까지 한번에</p>
+                </div>
+              </article>
+              <article class="pb-slider__card">
+                <img src="/images/photobooth/section04_filter3.png" alt="필터 테마 이미지 3">
+                <div class="pb-slider__bg-overlay">
+                  <h3>스타일 필터</h3>
+                  <p>색감, 질감 무드까지 한번에</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="pb-slider__controls">
+            <div class="pb-slider__dots" data-slider-dots></div>
+            <button type="button" class="pb-slider__toggle" data-slider-toggle aria-label="자동재생 멈춤">||</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-05" class="section pb-stack-section">
+      <div class="section-inner">
+        <p class="eyebrow">HARDWARE</p>
+        <h2>기본기가 결과를 바꿉니다</h2>
+        <p>촬영 테마, 소품, 인화 옵션으로 완성되는 포토부스 패키지입니다.</p>
+
+        <div class="pb-stack" data-stack>
+          <div class="pb-stack__stage">
+            <article class="pb-feature-card pb-feature-card--triplet pb-stack-card" data-stack-card>
+              <div class="pb-feature-triplet">
+                <article class="pb-feature-mini-card">
+                  <div class="pb-feature-mini-card__media">
+                    <img src="/images/photobooth/section02_icon01.png" width="1024" height="1024" alt="간편 설치 아이콘">
+                  </div>
+                  <div class="pb-feature-mini-card__body">
+                    <p class="pb-feature-mini-card__eyebrow">간편 설치/부스리스</p>
+                    <h3 class="pb-feature-mini-card__title">21.5인치정전식터치</h3>
+                    <p class="pb-feature-mini-card__desc">스마트폰처럼 빠르고 직관적인 조작 흐름<br>으로 고객의 체험이 매끄럽게 이어집니다.</p>
+                  </div>
+                </article>
+
+                <article class="pb-feature-mini-card">
+                  <div class="pb-feature-mini-card__media">
+                    <img src="/images/photobooth/section02_icon02.png" width="1024" height="1024" alt="항공뷰 지원 아이콘">
+                  </div>
+                  <div class="pb-feature-mini-card__body">
+                    <p class="pb-feature-mini-card__eyebrow">탈부착 항공뷰 지원</p>
+                    <h3 class="pb-feature-mini-card__title">Canon DSLR / 4K 카메라</h3>
+                    <p class="pb-feature-mini-card__desc">필터 적용 후에도 디테일이 무너지지 않도록, <br>압도적인 기본 해상도를 확보합니다.</p>
+                  </div>
+                </article>
+
+                <article class="pb-feature-mini-card">
+                  <div class="pb-feature-mini-card__media">
+                    <img src="/images/photobooth/section02_icon03.png" width="1024" height="1024" alt="포토 프린터 아이콘">
+                  </div>
+                  <div class="pb-feature-mini-card__body">
+                    <h3 class="pb-feature-mini-card__title">염료 승화 포토 프린터</h3>
+                    <p class="pb-feature-mini-card__desc">즉석 인화에서도 사진관 수준의 <br>색감과 선명도가 안정적으로 유지됩니다.</p>
+                  </div>
+                </article>
+              </div>
+            </article>
+            <article class="pb-detail-card pb-stack-card" data-stack-card>
+              <div class="pb-detail-card__layout">
+                <div class="pb-detail-card__left pb-detail-card__left--media">
+                  <img src="/images/photobooth/section05_hardware01.png" width="1024" height="1024" alt="포토부스 하드웨어 이미지">
+                </div>
+                <div class="pb-detail-card__right">
+                  <div class="pb-detail-card__intro">
+                    <p class="pb-detail-card__left-eyebrow">SPECIFICATIONS</p>
+                    <h3 class="pb-detail-card__left-title">사양. 필요한 것만 정확하게</h3>
+                  </div>
+                  <div class="pb-detail-card__spec-grid">
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">모니터</h4>
+                      <p class="pb-detail-card__text">21.5인치 정전식 터치 모니터</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">프린터</h4>
+                      <p class="pb-detail-card__text">염료 승화 포토 프린터</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">카메라</h4>
+                      <p class="pb-detail-card__text">Cannon DSLR / 4K 카메라</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">소비전력</h4>
+                      <p class="pb-detail-card__text">350W</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">전원</h4>
+                      <p class="pb-detail-card__text">220V, 50/60Hz</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">케이스</h4>
+                      <p class="pb-detail-card__text">스틸(Stell)</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">무게</h4>
+                      <p class="pb-detail-card__text">300Kg</p>
+                    </div>
+                    <div class="pb-detail-card__panel">
+                      <h4 class="pb-detail-card__subtitle">규격</h4>
+                      <p class="pb-detail-card__text">W1400 X D1000 X H2010 mm</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div th:replace="~{fragments/contact :: contact}"></div>
+
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+  <script src="/js/section02-service-stack.js" defer></script>
+  <script src="/js/section03-slider.js" defer></script>
+  <script src="/js/floating-contact.js" defer></script>
+</body>
+</html>

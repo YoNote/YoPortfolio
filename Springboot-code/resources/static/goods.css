@@ -1,0 +1,47 @@
+/* goods page specific styles */
+.goods-showcase .pb-feature-mini-card__media {
+  aspect-ratio: 4 / 3;
+}
+
+.goods-showcase .pb-feature-mini-card__media img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.goods-process .pb-detail-card__layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 1101px) {
+  .goods-showcase .pb-feature-triplet.is-staged .pb-feature-mini-card {
+    will-change: transform, opacity;
+    transition: transform 0.85s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.85s ease;
+  }
+
+  .goods-showcase .pb-feature-triplet.is-staged .pb-feature-mini-card:nth-child(1) {
+    transform: translateX(112%) scale(0.92);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .goods-showcase .pb-feature-triplet.is-staged .pb-feature-mini-card:nth-child(2) {
+    transform: scale(0.94);
+    opacity: 0.78;
+    z-index: 3;
+  }
+
+  .goods-showcase .pb-feature-triplet.is-staged .pb-feature-mini-card:nth-child(3) {
+    transform: translateX(-112%) scale(0.92);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  .goods-showcase .pb-feature-triplet.is-staged.is-expanded .pb-feature-mini-card:nth-child(1),
+  .goods-showcase .pb-feature-triplet.is-staged.is-expanded .pb-feature-mini-card:nth-child(2),
+  .goods-showcase .pb-feature-triplet.is-staged.is-expanded .pb-feature-mini-card:nth-child(3) {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}

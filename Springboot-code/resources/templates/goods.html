@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브랜드페이지 | 굿즈</title>
+  <link rel="stylesheet" href="/common-styles.css">
+  <link rel="stylesheet" href="/goods.css">
+</head>
+<body>
+  <header th:replace="~{fragments/header :: header(activeMenu=${activeMenu})}"></header>
+
+  <main>
+    <section id="section-01" class="hero section hero-goods">
+      <div class="hero-overlay"></div>
+      <div class="section-inner">
+        <p class="eyebrow">Section 01</p>
+        <h1>나의 순간, <br> 특별한 굿즈가 되다.</h1>
+        <p>단순한 사진을 넘어 손끝에 닿는 추억으로 촬영된 AI 화보를 컵, 포토카드, 장식품등 <br> 나만의 단 하나뿐인 아이템으로 간직하세요.</p>
+      </div>
+    </section>
+
+    <section id="section-02" class="section pb-intro-section goods-showcase">
+      <div class="section-inner">
+        <p class="eyebrow">Section 02</p>
+        <h2>내 사진으로 만드는 단 하나의 굿즈</h2>
+        <p class="pb-intro-section__lead"> AI로 촬영한 고화질 사진을 원하는 상품에 담아내세요. <br> 세상에 하나뿐인 나만의 아이템이 완성됩니다.</p>
+
+        <article class="pb-feature-card pb-feature-card--triplet">
+          <div class="pb-feature-triplet">
+            <article class="pb-feature-mini-card">
+              <div class="pb-feature-mini-card__media">
+                <img src="/images/goods/goods-mug-cup.png" width="1024" height="1024" alt="머그컵 굿즈 이미지">
+              </div>
+              <div class="pb-feature-mini-card__body">
+                <p class="pb-feature-mini-card__eyebrow">GOODS 01</p>
+                <h3 class="pb-feature-mini-card__title">머그컵</h3>
+                <p class="pb-feature-mini-card__desc">가장 좋아하는 순간을 매일 쓰는 컵에 담아, 일상에서 오래 기억하세요.</p>
+              </div>
+            </article>
+
+            <article class="pb-feature-mini-card">
+              <div class="pb-feature-mini-card__media">
+                <img src="/images/goods/goods-photo-card.png" width="1024" height="1024" alt="포토카드 굿즈 이미지">
+              </div>
+              <div class="pb-feature-mini-card__body">
+                <p class="pb-feature-mini-card__eyebrow">GOODS 02</p>
+                <h3 class="pb-feature-mini-card__title">포토카드</h3>
+                <p class="pb-feature-mini-card__desc">고화질 AI 화보를 카드로 제작해 소장하거나 선물용으로 활용할 수 있습니다.</p>
+              </div>
+            </article>
+
+            <article class="pb-feature-mini-card">
+              <div class="pb-feature-mini-card__media">
+                <img src="/images/goods/goods-piexiglass.png" width="1024" height="1024" alt="아크릴 장식품 굿즈 이미지">
+              </div>
+              <div class="pb-feature-mini-card__body">
+                <p class="pb-feature-mini-card__eyebrow">GOODS 03</p>
+                <h3 class="pb-feature-mini-card__title">아크릴 장식품</h3>
+                <p class="pb-feature-mini-card__desc">공간 분위기를 살려주는 장식품으로 나만의 장면을 특별하게 전시해 보세요.</p>
+              </div>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="section-03" class="section goods-process">
+      <div class="section-inner">
+        <p class="eyebrow">Section 03</p>
+        <h2>제작 프로세스</h2>
+
+        <article class="pb-detail-card">
+          <div class="pb-detail-card__layout">
+            <div class="pb-detail-card__left">
+              <p class="pb-detail-card__left-eyebrow">STEP 01</p>
+              <h3 class="pb-detail-card__left-title">AI 화보 촬영</h3>
+              <p class="pb-detail-card__text">원하는 콘셉트와 분위기로 고화질 AI 화보를 촬영하고, 굿즈 제작에 사용할 이미지를 선택합니다.</p>
+            </div>
+            <div class="pb-detail-card__left pb-detail-card__left--media">
+              <img src="/images/photobooth/section04_filter1.png" width="1080" height="1080" alt="AI 화보 촬영 예시 이미지">
+            </div>
+          </div>
+        </article>
+
+        <article class="pb-detail-card">
+          <div class="pb-detail-card__layout">
+            <div class="pb-detail-card__left pb-detail-card__left--media">
+              <img src="/images/photobooth/section04_bgcard_KOREA.png" width="1080" height="1080" alt="굿즈 타입 선택 예시 이미지">
+            </div>
+            <div class="pb-detail-card__left">
+              <p class="pb-detail-card__left-eyebrow">STEP 02</p>
+              <h3 class="pb-detail-card__left-title">굿즈 타입 선택</h3>
+              <p class="pb-detail-card__text">머그컵, 포토카드, 장식품 등 원하는 아이템을 고르고, 레이아웃과 문구를 맞춤 설정합니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pb-detail-card">
+          <div class="pb-detail-card__layout">
+            <div class="pb-detail-card__left">
+              <p class="pb-detail-card__left-eyebrow">STEP 03</p>
+              <h3 class="pb-detail-card__left-title">제작 완료 및 소장</h3>
+              <p class="pb-detail-card__text">제작이 완료된 굿즈를 받아보며, 나의 순간을 실물 아이템으로 오래 간직할 수 있습니다.</p>
+            </div>
+            <div class="pb-detail-card__left pb-detail-card__left--media">
+              <img src="/images/photobooth/section04_cosplay_IDOL.png" width="1080" height="1080" alt="굿즈 제작 완료 예시 이미지">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="section-04" class="section">
+      <div class="section-inner">
+        <p class="eyebrow">Section 04</p>
+        <h2>구매 안내</h2>
+        <p>판매 일정, 구매 채널, 배송 안내를 배치하는 섹션입니다.</p>
+      </div>
+    </section>
+  </main>
+
+  <div th:replace="~{fragments/contact :: contact}"></div>
+
+  <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+  <script src="/js/goods-showcase.js" defer></script>
+  <script src="/js/floating-contact.js" defer></script>
+</body>
+</html>

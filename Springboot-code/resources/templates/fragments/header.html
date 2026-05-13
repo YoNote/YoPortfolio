@@ -1,0 +1,15 @@
+﻿<header class="site-header" th:fragment="header(activeMenu)" xmlns:th="http://www.thymeleaf.org">
+  <a class="brand" th:href="@{/}" aria-label="home">
+    <img class="brand-logo"
+         th:src="${activeMenu == 'goods'} ? @{/images/BI_goods_orange.png} : @{/images/BI_photogram_white.png}"
+         th:alt="${activeMenu == 'goods'} ? 'Goods logo' : 'Photogram logo'">
+  </a>
+  <nav class="menu">
+    <a th:href="@{/}"
+       data-menu="photobooth"
+       th:classappend="${activeMenu == 'photobooth'} ? ' active' : ''">포토부스</a>
+    <a th:href="@{/goods}"
+       data-menu="goods"
+       th:classappend="${activeMenu == 'goods'} ? ' active' : ''">굿즈</a>
+  </nav>
+</header>
